@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+  --theme: #049048;
+  --trans: #049048ff;
+}
+
+body {
+  text-align: center;
+  margin-top: 100px;
+  background-image: url(bg.png);
+}
+
+input {
+  font-size: 32px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+input[type="submit"] {
+  background-color: var(--theme);
+  color: white;
+  width: 308px;
+
+}
+
+#nav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 75px;
+  width: 100%;
+  background: var(--theme);
+  text-align: center;
+}
+
+.pages {
+  width: auto;
+  display: inline-block;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-top: 23px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+/*.pages :hover {
+  color: ;
+}*/
+
+#current {
+  background-color: #054d28;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.infoBubble {
+  width: 400px;
+  height: 200px;
+  background-color: #ffffff;
+  background-image: url('');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  border-style: solid;
+  border-color: var(--theme);
+  border-width: 5px;
+  margin: 10px;
+}
+
+.infoBubble:hover {
+  opacity: 70%;
+  transition: opacity .4s;
+}
+
+.infoBubble:active {
+  opacity: 100%;
+  transition: opacity .1s;
+}
+
+h3 {
+  border-radius: 25px;
+  background-color: var(--trans);
+  width: 75%;
+  margin-left: 37px;
+  margin-top: 70px;
+  padding: 10px;
+}
+
+h3:hover {
+  background-color: #074023;
+  transition: background-color .4s;
+}
+
+a {
+  cursor: pointer;
+}
+
+#hours {
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hourInfo {
+  background-color: white;
+}
+
+td {
+  width: 300px;
+  height: 35px;
+}
+
+greek {
+  font-family: 'Gentium Plus';
+  font-size: 18px;
+}
+
+.p {
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+#logo {
+  height: 75px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background: white;
+}
+
+#payMethods>img {
+  height: 40px;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#payMethods>img:hover {
+  opacity: 50%;
+  transition: opacity .4s;
+}
+
+#payMethods>img :active {
+  opacity: 100%;
+}
+
+#payMethods {
+  visibility: hidden;
+  position: absolute;
+  left: 10px;
+  top: 467px;
+}
+
+.price {
+  cursor: pointer;
+}
+
+.equip-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-header,
+.reserve-header {
+  color: white;
+  width: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+#equip-content {
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+#notice {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.login-logo {
+  height: 150px;
+  margin-bottom: -115px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+}
+
+#loginForm {
+  text-align: center;
+  margin-top: 125px;
+}
+
+#submitMessage {
+  font-weight: normal;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+a {
+  color: var(--theme);
+}
+
+a:visited {
+  color: var(--theme);
+}

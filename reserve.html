@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kainotomia | Reserve</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="logo.ico">
+  <title>Kainotomia - Reserve Equipment</title>
+</head>
+
+<body>
+  <div id="nav">
+    <a><img src="logo.png" id="logo" onclick="redirect('index')"></a>
+
+    <a class="pages" onclick="redirect('index')">Home</a>
+    <td><a class="pages" onclick="redirect('membership')">Membership</a></td>
+    <td><a class="pages" id="current" onclick="redirect('reserve')">Reserve</a></td>
+    <a class="pages" onclick="redirect('contact')">Contact</a>
+    <a class="pages"
+      onclick="ifLogged(function(){var c = confirm('You are logged in as ' + localStorage.getItem('username') + '.\nWould you like to logout?');if (c == true) {localStorage.setItem('username', '');localStorage.setItem('password', ''); window.location = 'login.html';}})">Login/Logout</a>
+  </div>
+  <div id="equip-content">
+    <!--this is necessary for centering-->
+    <h1 style="margin-bottom: auto;">Reserve</h1>
+    <br>
+    <a style="text-decoration: none;" onclick="redirect('contact')">
+      <h3 class="contact-header">Contact Us</h3>
+    </a>
+    <p>Our equipment manager and director Sam Mergu can help coordinate a time for you and/or your group!</p><a
+      style="text-decoration: none;" onclick="redirect('reserve-form')">
+      <br>
+      <h3 class="reserve-header">Reserve Online!</h3>
+    </a>
+    <p>Don't have the time for another phone call? Just fill out a quick form to reserve equipment and space!</p>
+    <div></div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

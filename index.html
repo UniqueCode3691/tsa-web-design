@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="logo.ico">
+  <title>Kainotomia | Home</title>
+</head>
+
+<body>
+  <div id="nav">
+    <!--<a><img src="logo.png" id="logo" onclick="redirect('index')"></a>-->
+    <table style="background-color: transparent;">
+      <tr>
+        <td><a class="pages" onclick="redirect('index')" id="current">Home</a></td>
+        <td><a class="pages" onclick="redirect('membership')">Membership</a></td>
+        <td><a class="pages" onclick="redirect('reserve')">Reserve</a></td>
+        <td><a class="pages" onclick="redirect('contact')">Contact</a></td>
+        <td><a class="pages"
+            onclick="ifLogged(function(){var c = confirm('You are logged in as ' + localStorage.getItem('username') + '.\nWould you like to logout?');if (c == true) {localStorage.setItem('username', '');localStorage.setItem('password', ''); window.location = 'login.html';}})">Login/Logout</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <h1 id="top">Kainotomia</h1>
+  <a onclick="redirect('membership')">
+    <div class="infoBubble"
+      style="background-image: url(logo.png); background-color: white;  background-size: contain;background-position: 98px 0px;">
+      <h3>Become a Member!</h3>
+    </div>
+  </a>
+  <a onclick="redirect('reserve')">
+    <div class="infoBubble"
+      style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/93/Makerspace_Flex_Day_Activity_%2816155735298%29.jpg);">
+      <h3>Reserve Space</h3>
+    </div>
+  </a>
+  <br>
+  <a onclick="redirect('contact')">
+    <div class="infoBubble"
+      style="background-image: url(https://www.receptionhq.com/wp-content/uploads/2021/08/OHQ_LiveCallAnswering.svg);">
+      <h3>Contact Us!</h3>
+    </div>
+  </a>
+
+  <br>
+  <br>
+
+  <div id="about">
+    <h2>About Us</h2>
+    <div class="p">Welcome to Kainotomia, the land of Innovation! We are a makerspace where members can come to work on
+      their
+      projects or create ideas. We have robot building supplies, computers to program, 3D printers, and more! Just make
+      an account and schedule a time to get
+      started on your journey of innovation!</div>
+    <br><br>
+    <h2>Our Name</h2>
+    <div class="p"> Our name, Kainotomia, or <greek>Καινοτομία</greek> in Greek, means innovation. We stand for
+      innovation,
+      creativity, and all our patrons' great ideas.</div>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <script src="script.js"></script>
+  <!--<script src="isLoggedIn.js"></script>-->
+
+  <!--
+  Challenge: Develop a website for a fictitious makerspace in a community. It should provide information about 
+  
+  
+  ✅ what equipment and services the makerspace offers, 
+     membership information, 
+  ✅hours, and a 
+     calendar of events. 
+  
+  easy to follow and include an option to 
+  
+  reserve equipment or space.  
+
+  ✅ Equipment and services info
+  ∙ Calendar
+  ∙ Membership information
+  ∙ Functionality to reserve equipment or space
+  ✅ Hours
+  ✅ Contact information
+  -->
+  <a onclick="redirect('reference')">
+    <h2><u><span style="color: green;">References</span></u></h2>
+  </a>
+  <br><br><br><br><br>
+</body>
+
+</html>
+<!--Note: theme options:
+  dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink-->

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.ico">
+  <title>Kainotomia | Reserve Equipment & Space</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    table,
+    th,
+    td {
+      border: 2px solid green;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body>
+  <a onclick="redirect('reserve')"
+    style="padding: 10px; border-radius: 25px; background-color: #049048; color:white; position: absolute; left: 10px; top: 10px;">Go
+    Back</a>
+  <div id="postSubmit" style="display: none;">
+    <img src="logo.png" style="width:280px;">
+    <h2 id="submitMessage"></h2>
+  </div>
+  <div id="displayForm">
+    <form id="reserveForm" onsubmit="">
+      <h1>Request Reservation</h1>
+      <br>
+      <label style="font-size: 30px;" for="name">Name(s): <span style="color:red">*</span></label><br>
+      <input style="width: 500px; margin-bottom: 15px;" type="text" placeholder="e.g. Joe Mama" id="name" required>
+      <br><label style="font-size: 30px;" for="email">Email: <span style="color:red">*</span></label><br>
+      <input style="width: 500px;" type="text" placeholder="e.g. john.doe@gmail.com" id="email" required><br>
+      <br><label style="font-size: 25px;" for="demo">First time? (A safety orientation is required)</label><br><input
+        type="checkbox">
+      <br>
+      <h2 id="notice">Equipment<br><span style="color:red"><u>PLEASE NOTE: New equipment is constantly coming in and we
+            will try our best to get back to you as soon as we can with your reservation!</u></span></h2>
+      <br><label style="font-size: 20px;" for="equip-1">3D Printers: </label><br><input type="number" id="equip-1"
+        placeholder="0 - 3" min="0" max="3"><br>
+      <br><label style="font-size: 20px;" for="equip-2">Computers: </label><br><input type="number" id="equip-2"
+        placeholder="0 - 3" min="0" max="3"><br>
+      <br><label style="font-size: 20px;" for="equip-3">Arts and Crafts Bin: </label><br><input type="number"
+        id="equip-3" placeholder="0-4 hours" min="0" max="4"><br>
+      <br><label style="font-size: 20px;" for="equip-4">Hot glue guns: </label><br><input type="number" id="equip-4"
+        placeholder="0 - 3" min="0" max="3"><br>
+      <br><label style="font-size: 20px;" for="equip-5">Laser Cutter: </label><br><input type="number" id="equip-4"
+        placeholder="Max 1" min="0" max="1"><br>
+      <br>
+
+      <h2>Space <br> <span style="font-size: 15px; color: red;">Check the timeslots you would like to reserve</span>
+      </h2>
+      <br><label style="font-size: 20px;">Arts & Crafts Room</label><br><br>
+      <table align="center">
+
+        <tr>
+          <th>Day</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td><label for="art-mon">8:30 a.m. - 1:45 p.m.</label><input type="checkbox" id="art-mon"></td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td><label for="art-tue">9:00 a.m. - 2:00 p.m.</label><input type="checkbox" id="art-tue"></td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td><label for="art-wed">2:30 p.m - 7:30 p.m.</label><input type="checkbox" id="art-wed"></td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td><label for="art-fri">9:00 a.m. - 2:45 p.m.</label><input type="checkbox" id="art-fri"></td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td><label for="art-sat">2:15 p.m. - 9:00 p.m.</label><input type="checkbox" id="art-sat"></td>
+        </tr>
+      </table>
+
+      <br><label style="font-size: 20px;">Robotics and Tech Room</label><br><br>
+
+      <table align="center">
+        <tr>
+          <th>Day</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td><label for="tech-mon">2:15 p.m. - 7:30 p.m.</label><input type="checkbox" id="art-mon"></td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td><label for="tech-tue">2:30 p.m - 7:30 p.m.</label><input type="checkbox" id="art-tue"></td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td><label for="tech-wed">9:00 a.m. - 2:00 p.m.</label><input type="checkbox" id="art-wed"></td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td><label for="tech-fri">3:15 p.m. - 9:00 p.m.</label><input type="checkbox" id="art-fri"></td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td><label for="tech-sat">7:00 a.m. - 1:45 p.m.</label><input type="checkbox" id="art-sat"></td>
+        </tr>
+      </table>
+
+      <br><input style="margin-top: 40px; margin-bottom: 10px; border-width: 0px;" type="submit">
+      <a href="mailto:sam.mergu@kainotomia.org">
+        <h2>Help</h2><br><br><br><br>
+      </a>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <script src="isLoggedIn.js"></script>
+</body>
+
+</html>

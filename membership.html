@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kainotomia | Membership</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="logo.ico">
+</head>
+
+<body>
+  <div id="nav">
+    <a><img src="logo.png" id="logo" onclick="redirect('index')"></a>
+
+    <a class="pages" onclick="redirect('index')">Home</a>
+    <td><a class="pages" onclick="redirect('membership')" id="current">Membership</a></td>
+    <td><a class="pages" onclick="redirect('reserve')">Reserve</a></td>
+    <a class="pages" onclick="redirect('contact')">Contact</a>
+    <a class="pages"
+      onclick="ifLogged(function(){var c = confirm('You are logged in as ' + localStorage.getItem('username') + '.\nWould you like to logout?');if (c == true) {localStorage.setItem('username', '');localStorage.setItem('password', ''); window.location = 'login.html';}})">Login/Logout</a>
+  </div>
+
+
+  <!--Content-->
+
+  <h1>Membership</h1>
+  <h2>How do I become a Member?</h2>
+  <div class="p">To use our Makerspace, you must become a member. How to do that is simple: a monthly membership fee.
+    <br><br>
+
+  </div>
+  <div class="infoBubble price" style="width: 300px; color:black;">
+    <h2 style="margin-top: 50px;">$50/mo</h2>
+    <h4>Solo</h4>
+  </div>
+  <div class="infoBubble price" style="width: 300px; color:black;">
+    <h2 style="margin-top: 50px;">$510/yr</h2>
+    <h4>Solo</h4>
+  </div>
+  <br>
+  <div class="infoBubble price" style="width: 300px; color:black;">
+    <h2 style="margin-top: 50px;">$85/mo</h2>
+    <h4>Family</h4>
+  </div>
+  <div class="infoBubble price" style="width: 300px; color:black;">
+    <h2 style="margin-top: 50px;">$800/yr</h2>
+    <h4>Family</h4>
+  </div>
+  <div id="payMethods">
+    <img src="https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png"
+      onclick="window.open('https://www.paypal.com/us/signin');">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1280px-Apple_Pay_logo.svg.png"
+      onclick="window.open('https://www.apple.com/apple-pay/');">
+    <img src="https://1000logos.net/wp-content/uploads/2023/03/Google-Pay-logo.png"
+      onclick="window.open('https://pay.google.com/gp/w/u/0/home/paymentmethods');">
+    <br>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png"
+      onclick="window.open('https://dashboard.stripe.com/login');">
+    <img src="https://download.logo.wine/logo/Payoneer/Payoneer-Logo.wine.png"
+      onclick="window.open('https://myaccount.payoneer.com/');">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Skrill_logo.svg/2560px-Skrill_logo.svg.png"
+      onclick="window.open('https://account.skrill.com/wallet/account/login');">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

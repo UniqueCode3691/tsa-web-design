@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kainotomia | Contact</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="logo.ico">
+</head>
+
+<body>
+  <div id="nav">
+    <a><img src="logo.png" id="logo" onclick="redirect('index')"></a>
+
+    <a class="pages" onclick="redirect('index')">Home</a>
+    <a class="pages" onclick="redirect('membership')">Membership</a>
+    <a class="pages" onclick="redirect('reserve')">Reserve</a>
+    <a class="pages" onclick="redirect('contact')" id="current">Contact</a>
+    <a class="pages"
+      onclick="ifLogged(function(){var c = confirm('You are logged in as ' + localStorage.getItem('username') + '.\nWould you like to logout?');if (c == true) {localStorage.setItem('username', '');localStorage.setItem('password', ''); window.location = 'login.html';}})">Login/Logout</a>
+
+  </div>
+  <h1>Contact</h1>
+  <br>
+  <h2>Phone</h2>
+  <p>(302)-394-1276<br>Caleb Brewster - Coordinator</p>
+  <br>
+  <p>(302)-485-2240<br>Sam Mergu - Director</p>
+  <br>
+  <p>(302)-583-1034<br>Abrar Ahmed - Program Manager</p>
+  <br>
+  <p>(302)-56-ASKUS<br>Call Center</p>
+  <br>
+
+  <h2>Emails</h2>
+  <p>caleb.brewster@kainotomia.org</p>
+  <br>
+  <p>sam.mergu@kainotomia.org</p>
+  <br>
+  <p>abrar.ahmed@kainotomia.org</p>
+  <br>
+  <h2>Address</h2>
+  <p>777 Scientific Way, Wilmington, Delaware</p>
+  <br>
+  <h2>Hours</h2>
+  <table id="hours">
+    <thead>
+      <th class="hourInfo">Day</th>
+      <th class="hourInfo">Hours</th>
+    </thead>
+    <tr>
+      <td class="hourInfo">Monday</td>
+      <td class="hourInfo">8:30 a.m - 7:30 p.m.</td>
+    </tr>
+    <tr>
+      <td class="hourInfo">Tuesday</td>
+      <td class="hourInfo">9:00 a.m - 7:30 p.m.</td>
+    </tr>
+    <tr>
+      <td class="hourInfo">Wednesday</td>
+      <td class="hourInfo">9:00 a.m - 7:30 p.m.</td>
+    </tr>
+    <tr>
+      <td class="hourInfo">Thursday</td>
+      <td class="hourInfo">Closed</td>
+    </tr>
+    <tr>
+      <td class="hourInfo">Friday</td>
+      <td class="hourInfo">9:00 a.m - 9:00 p.m.</td>
+    </tr>
+    <tr>
+      <td class="hourInfo">Saturday</td>
+      <td class="hourInfo">7:00 a.m - 9:00 p.m.</td>
+    </tr>
+    <tr>
+      <td class="hourInfo">Sunday</td>
+      <td class="hourInfo">Closed</td>
+    </tr>
+  </table>
+  <br>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

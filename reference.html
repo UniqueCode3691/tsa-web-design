@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kainotomia | References</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="logo.ico">
+</head>
+
+<body>
+  <div id="nav">
+    <a><img src="logo.png" id="logo" onclick="redirect('index')"></a>
+
+    <a class="pages" onclick="redirect('index')" id="current">Home</a>
+    <a class="pages" onclick="redirect('membership')">Membership</a>
+    <a class="pages" onclick="redirect('reserve')">Reserve</a>
+    <a class="pages" onclick="redirect('contact')">Contact</a>
+    <a class="pages"
+      onclick="ifLogged(function(){var c = confirm('You are logged in as ' + localStorage.getItem('username') + '.\nWould you like to logout?');if (c == true) {localStorage.setItem('username', '');localStorage.setItem('password', ''); window.location = 'login.html';}})">Login/Logout</a>
+
+  </div>
+  <h1>References</h1>
+  <p>
+    <a
+      href="https://drive.google.com/file/d/1-mMm2-mr0G123ExKP36sLOkwfWpcPhLF/view">Worklog
+    </a>
+    <br>
+    <br>
+    <a
+      href="https://drive.google.com/file/d/1ECshBR5xcG93dezw4b3doQ_6fvUj04BS">Student Copyright Checklist
+    </a>
+    <br>
+    <br>
+    <a href="https://grandinspired.com/membership">https://grandinspired.com/membership</a>
+    <br>
+    <br>
+    <a
+      href="https://upload.wikimedia.org/wikipedia/commons/9/93/Makerspace_Flex_Day_Activity_%2816155735298%29.jpg">https://upload.wikimedia.org/wikipedia/commons/9/93/Makerspace_Flex_Day_Activity_%2816155735298%29.jpg</a>
+    <br>
+    <br>
+    <a
+      href="https://www.receptionhq.com/wp-content/uploads/2021/08/OHQ_LiveCallAnswering.svg">https://www.receptionhq.com/wp-content/uploads/2021/08/OHQ_LiveCallAnswering.svg</a>
+    <br>
+    <br>
+    <a
+      href="https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png">https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png</a>
+    <br>
+    <br>
+    <a
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1280px-Apple_Pay_logo.svg.png">https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1280px-Apple_Pay_logo.svg.png</a>
+    <br>
+    <br>
+    <a
+      href="https://1000logos.net/wp-content/uploads/2023/03/Google-Pay-logo.png">https://1000logos.net/wp-content/uploads/2023/03/Google-Pay-logo.png</a>
+    <br>
+    <br>
+    <a
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png">https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png</a>
+    <br>
+    <br>
+    <a
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Skrill_logo.svg/2560px-Skrill_logo.svg.png">https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Skrill_logo.svg/2560px-Skrill_logo.svg.png</a>
+    <br>
+    <br>
+    <a
+      href="https://download.logo.wine/logo/Payoneer/Payoneer-Logo.wine.png">https://download.logo.wine/logo/Payoneer/Payoneer-Logo.wine.png</a>
+    <br>
+    <br>
+  </p>
+  <script src="script.js"></script>
+</body>
+
+</html>

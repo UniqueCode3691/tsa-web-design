@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="logo.ico">
+  <title>Kainotomia | Login</title>
+</head>
+
+<body>
+  <img src="logo.png" class="login-logo">
+  <form id="loginForm" onsubmit="login(this.username.value, this.password.value)">
+    <h1>Login</h1>
+
+    <input type="text" name="username" placeholder="Username">
+    <br>
+    <input type="password" name="password" placeholder="Password">
+    <br>
+    <input type="submit">
+
+    <script src="script.js"></script>
+  </form>
+  <br>
+  <a style="color: green;"
+    onclick="document.getElementById('adminMessage').innerHTML = '<h1>IMPORTANT NOTICE</h1><span>TSA Admins: for a demo account, the Username is \'<b>TSA_Admin</b>\' and the password is \'<b>@password1</b>\'.<br>Explore our site. <br>You may click on the Home button, and navigate home. every page is accessible to view logged out except the reservation form. We encourage you to test the login/out features, which I am specifically proud of. Enjoy, and have a great day at the <b>Land of Innovation™!</b> </span><br><h4 style=\'margin-bottom:-23px;\'>Caleb Brewster,</h4> <h5 style=\'margin-left: 70px;margin-right: 70px;\'>teammate of Samanyu Mergu and Abrar Ahmed</h5>';"><u><b>IMPORTANT
+        NOTICE</b></u></a>
+  <br>
+  <a style="color: green;" onclick="redirect('index')"><u>Back to home</u></a>
+
+  <div id="adminMessage" style="position: absolute;right: 0;top: 80px;margin-left: 64%;margin-right: 4%;"></div>
+  <!--<a style="color: green;" onclick="redirect('register')"><u>Register</u>-->
+</body>
+
+</html>
